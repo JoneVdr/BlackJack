@@ -1,3 +1,5 @@
+print("Escoja una carta: ")
+carta = input()
 cartas = {
     chr(0x1f0a1): 11,
     chr(0x1f0a2): 2,
