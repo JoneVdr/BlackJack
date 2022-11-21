@@ -13,3 +13,5 @@ cartas = {
     chr(0x1f0ad): 10,
     chr(0x1f0ae): 10,
 }
+def valor_carta(carta):
+    return cartas[carta]
