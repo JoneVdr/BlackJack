@@ -1,5 +1,4 @@
 from random import choice, sample
-carta = input( "Ingrese el nombre de la carta: " )
 cartas = {
     chr(0x1f0a1): 11,
     chr(0x1f0a2): 2,
