@@ -17,3 +17,22 @@ cartas = {
 }
 print("Cartas: {}".format(" ".join(cartas.keys())))
 print("Puntos: {}".format(list(cartas.values())))
+print("Seleccione una carta: ", end="")
+carta = choice(list(cartas))
+print(carta)
+print("Puntos: {}".format(cartas[carta]))
+print("Seleccione otra carta: ", end="")
+carta2 = choice(list(cartas))
+print(carta2)
+print("Puntos: {}".format(cartas[carta2]))
+print("Puntos totales: {}".format(cartas[carta] + cartas[carta2]))
+print("Cartas de la banca: ", end="")
+carta3 = choice(list(cartas))
+print(carta3, end=" ")
+carta4 = choice(list(cartas))
+print(carta4)
+print("Puntos totales de la banca: {}".format(cartas[carta3] + cartas[carta4]))
+if cartas[carta] + cartas[carta2] > cartas[carta3] + cartas[carta4]:
+    print("Ganaste")
+elif cartas[carta] + cartas[carta2] < cartas[carta3] + cartas[carta4]:
+    print("Perdiste")
