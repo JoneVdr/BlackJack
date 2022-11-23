@@ -32,12 +32,10 @@ carta4 = choice(list(cartas))
 print(carta4)
 print("Puntos totales de la banca: {}".format(cartas[carta3] + cartas[carta4]))
 
-while True:
-    if cartas[carta] + cartas[carta2] > cartas[carta3] + cartas[carta4]:
-        print("Ganaste")
-        break
-    elif cartas[carta] + cartas[carta2] < cartas[carta3] + cartas[carta4]:
-        print("Perdiste")
-        break
-    else: cartas[carta] + cartas[carta2] == cartas[carta3] + cartas[carta4]
+
+if cartas[carta] + cartas[carta2] > cartas[carta3] + cartas[carta4]:
+    print("Ganaste")
+elif cartas[carta] + cartas[carta2] < cartas[carta3] + cartas[carta4]:
+    print("Perdiste")
+if cartas[carta] + cartas[carta2] == cartas[carta3] + cartas[carta4]:
     print("Empate")
