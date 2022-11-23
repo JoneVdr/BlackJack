@@ -40,3 +40,4 @@ while True:
         print("Perdiste")
         break
     else: cartas[carta] + cartas[carta2] == cartas[carta3] + cartas[carta4]
+    print("Empate")
